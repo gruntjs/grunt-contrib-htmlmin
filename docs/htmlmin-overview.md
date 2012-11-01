@@ -1,0 +1,1 @@
+Minifies HTML using [html-minifier](http://perfectionkills.com/experimenting-with-html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
