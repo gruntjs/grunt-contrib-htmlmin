@@ -1,0 +1,49 @@
+{
+  "name": "grunt-contrib-htmlmin",
+  "description": "Minify HTML",
+  "version": "0.1.0",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-htmlmin",
+  "author": {
+    "name": "Grunt Team",
+    "url": "http://gruntjs.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gruntjs/grunt-contrib-htmlmin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gruntjs/grunt-contrib-htmlmin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/gruntjs/grunt-contrib-htmlmin/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt-lib-contrib": "~0.3.0",
+    "html-minifier": "~0.4.5",
+    "gzip-js": "~0.3.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0a",
+    "grunt-contrib-internal": "~0.1.0",
+    "grunt-contrib-clean": "~0.4.0a",
+    "grunt-contrib-jshint": "~0.1.0",
+    "grunt-contrib-nodeunit": "~0.1.0"
+  },
+  "keywords": [
+    "gruntplugin",
+    "html",
+    "min",
+    "minify",
+    "compress"
+  ]
+}
