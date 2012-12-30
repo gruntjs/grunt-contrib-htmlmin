@@ -29,14 +29,20 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     htmlmin: {
-      compile: {
+      options: {
+        removeComments: true,
+        collapseWhitespace: true,
+        cwd: "test/fixtures/"
+      },
+      'tmp/test.html': 'test/fixtures/test.html',
+      'tmp/fixtures/': 'test/fixtures/*.html',
+      'tmp/test/': 'test/fixtures/test2.html',
+      'no-cwd': {
         options: {
-          removeComments: true,
-          collapseWhitespace: true
+          cwd: ""
         },
-        files: {
-          'tmp/test.html': ['test/fixtures/test.html']
-        }
+        src: 'test/**/*.html',
+        dest: "tmp/"
       }
     },
 
