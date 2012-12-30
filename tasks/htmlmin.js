@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     var min = minify(max, options);
 
     if (min.length) {
-      // If the destination resembles a directory we'll need to
+      // If the destination is or resembles a directory we'll need to
       // join the `dest` and `src` paths, but only after stripping
       // `cwd` (if specified) from `src`.
       if (grunt.file.isDir(dest) || (!grunt.file.exists(dest) && dest[dest.length - 1] === path.sep)) {
