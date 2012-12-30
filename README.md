@@ -132,7 +132,7 @@ grunt.initConfig({
         collapseWhitespace: true
       },
       files: {                                   // Dictionary of files
-        'dist/index.html': 'src/index.html',      // 'destination': 'source'
+        'dist/index.html': 'src/index.html',     // 'destination': 'source'
         'dist/contact.html': 'src/contact.html'
       }
     },
@@ -140,6 +140,11 @@ grunt.initConfig({
       files: {
         'dist/index.html': 'src/index.html',
         'dist/contact.html': 'src/contact.html'
+      }
+    },
+    all: {                                       // Minify multiple files using file globbing
+      files: {
+        'dist/': 'src/**/*.html'
       }
     }
   }
