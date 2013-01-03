@@ -2,31 +2,20 @@
 
 > Minify HTML
 
-_Note that this plugin has not yet been released, and only works with the latest bleeding-edge, in-development version of grunt. See the [When will I be able to use in-development feature 'X'?](https://github.com/gruntjs/grunt/blob/devel/docs/faq.md#when-will-i-be-able-to-use-in-development-feature-x) FAQ entry for more information._
 
 ## Getting Started
-_If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide._
+If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide, as it explains how to create a [gruntfile][Getting Started] as well as install and use grunt plugins. Once you're familiar with that process, install this plugin with this command:
 
-From the same directory as your project's [Gruntfile][Getting Started] and [package.json][], install this plugin with the following command:
-
-```bash
+```shell
 npm install grunt-contrib-htmlmin --save-dev
 ```
 
-Once that's done, add this line to your project's Gruntfile:
-
-```js
-grunt.loadNpmTasks('grunt-contrib-htmlmin');
-```
-
-If the plugin has been installed correctly, running `grunt --help` at the command line should list the newly-installed plugin's task or tasks. In addition, the plugin should be listed in package.json as a `devDependency`, which ensures that it will be installed whenever the `npm install` command is run.
-
 [grunt]: http://gruntjs.com/
 [Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
-[package.json]: https://npmjs.org/doc/json.html
 
 
-## The htmlmin task
+## Htmlmin task
+_Run this task with the `grunt htmlmin` command._
 
 Minifies HTML using [html-minifier](http://perfectionkills.com/experimenting-with-html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
 
@@ -151,9 +140,10 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
- * 2012-11-01 - v0.1.0 - Initial release.
+ * 2012-11-01   v0.1.0   Initial release.
 
---
-Task submitted by <a href="http://github.com/sindresorhus">Sindre Sorhus</a>.
+---
 
-*Generated on Thu Nov 01 2012 23:21:06.*
+Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
+
+*This file was generated on Thu Jan 03 2013 17:17:53.*
