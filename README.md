@@ -19,6 +19,8 @@ _Run this task with the `grunt htmlmin` command._
 
 Minifies HTML using [html-minifier](http://perfectionkills.com/experimenting-with-html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
 
+_This plugin is only compatible with Grunt `>= 0.4.0`._
+
 ### Options
 
 See the [html-minifier docs](http://perfectionkills.com/experimenting-with-html-minifier/#options) for more in-depth explanation of the options and caveats.
@@ -121,13 +123,13 @@ grunt.initConfig({
         collapseWhitespace: true
       },
       files: {                                   // Dictionary of files
-        'dist/index.html': 'src/index.html',      // 'destination': 'source'
+        'dist/index.html': 'src/index.html'      // 'destination': 'source'
         'dist/contact.html': 'src/contact.html'
       }
     },
     dev: {                                       // Another target
       files: {
-        'dist/index.html': 'src/index.html',
+        'dist/index.html': 'src/index.html'
         'dist/contact.html': 'src/contact.html'
       }
     }
@@ -140,10 +142,11 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
- * 2012-11-01   v0.1.0   Initial release.
+ * 2013-01-08   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
+ * 2012-10-31   v0.1.0   Initial release.
 
 ---
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Thu Jan 03 2013 17:17:53.*
+*This file was generated on Wed Jan 09 2013 14:12:03.*

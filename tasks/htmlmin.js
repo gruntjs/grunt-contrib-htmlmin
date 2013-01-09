@@ -23,15 +23,16 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('htmlmin', 'Minify HTML', function() {
     var options = this.options();
-    var max = grunt.file.read(this.file.src);
-    var min = minify(max, options);
-
     grunt.verbose.writeflags(options, 'Options');
 
-    if (min.length) {
-      grunt.file.write(this.file.dest, min);
-      grunt.log.writeln('File ' + this.file.dest + ' created.');
-      minMaxInfo(min, max);
-    }
+    this.files.forEach(function(f) {
+      var max = grunt.file.read(f.src);
+      var min = minify(max, options);
+      if (min.length) {
+        grunt.file.write(f.dest, min);
+        grunt.log.writeln('File ' + f.dest + ' created.');
+        minMaxInfo(min, max);
+      }
+    });
   });
 };
