@@ -10,16 +10,7 @@
 
 module.exports = function(grunt) {
   var minify = require('html-minifier').minify;
-
-  var minMaxGzip = function(src) {
-    return src ? require('gzip-js').zip(src, {}) : '';
-  };
-
-  var minMaxInfo = function(min, max) {
-    var gzipSize = String(minMaxGzip(min).length);
-    grunt.log.writeln('Uncompressed size: ' + String(max.length).green + ' bytes.');
-    grunt.log.writeln('Compressed size: ' + gzipSize.green + ' bytes gzipped (' + String(min.length).green + ' bytes minified).');
-  };
+  var helper = require('grunt-lib-contrib').init(grunt);
 
   grunt.registerMultiTask('htmlmin', 'Minify HTML', function() {
     var options = this.options();
@@ -44,7 +35,7 @@ module.exports = function(grunt) {
       } else {
         grunt.file.write(f.dest, min);
         grunt.log.writeln('File ' + f.dest + ' created.');
-        minMaxInfo(min, max);
+        helper.minMaxInfo(min, max);
       }
     });
 

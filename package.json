@@ -22,14 +22,14 @@
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
     "html-minifier": "~0.4.5",
-    "gzip-js": "~0.3.1"
+    "grunt-lib-contrib": "~0.5.1"
   },
   "devDependencies": {
     "grunt-contrib-internal": "*",
