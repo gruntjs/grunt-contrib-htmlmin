@@ -24,13 +24,23 @@ module.exports = function(grunt) {
       test: ['tmp']
     },
     htmlmin: {
+      options: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
       compile: {
-        options: {
-          removeComments: true,
-          collapseWhitespace: true
-        },
         files: {
           'tmp/test.html': ['test/fixtures/test.html']
+        }
+      },
+      multiple: {
+        files: {
+          'tmp/multiple.html': ['test/fixtures/multiple*.html']
+        }
+      },
+      empty: {
+        files: {
+          'tmp/idontexist.html': ['test/fixtures/idontexist.html']
         }
       }
     },

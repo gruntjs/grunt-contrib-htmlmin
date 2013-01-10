@@ -26,13 +26,27 @@ module.exports = function(grunt) {
     grunt.verbose.writeflags(options, 'Options');
 
     this.files.forEach(function(f) {
-      var max = grunt.file.read(f.src);
+      var max = f.src.filter(function(filepath) {
+        // Warn on and remove invalid source files (if nonull was set).
+        if (!grunt.file.exists(filepath)) {
+          grunt.log.warn('Source file "' + filepath + '" not found.');
+          return false;
+        } else {
+          return true;
+        }
+      })
+      .map(grunt.file.read)
+      .join(grunt.util.normalizelf(grunt.util.linefeed));
+
       var min = minify(max, options);
-      if (min.length) {
+      if (min.length < 1) {
+        grunt.log.warn('Destination not written because minified HTML was empty.');
+      } else {
         grunt.file.write(f.dest, min);
         grunt.log.writeln('File ' + f.dest + ' created.');
         minMaxInfo(min, max);
       }
     });
+
   });
 };

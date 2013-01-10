@@ -123,13 +123,13 @@ grunt.initConfig({
         collapseWhitespace: true
       },
       files: {                                   // Dictionary of files
-        'dist/index.html': 'src/index.html'      // 'destination': 'source'
+        'dist/index.html': 'src/index.html',     // 'destination': 'source'
         'dist/contact.html': 'src/contact.html'
       }
     },
     dev: {                                       // Another target
       files: {
-        'dist/index.html': 'src/index.html'
+        'dist/index.html': 'src/index.html',
         'dist/contact.html': 'src/contact.html'
       }
     }
@@ -149,4 +149,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Wed Jan 09 2013 14:12:03.*
+*This file was generated on Fri Jan 11 2013 17:52:51.*
