@@ -8,16 +8,16 @@
 
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   var minify = require('html-minifier').minify;
   var helper = require('grunt-lib-contrib').init(grunt);
 
-  grunt.registerMultiTask('htmlmin', 'Minify HTML', function() {
+  grunt.registerMultiTask('htmlmin', 'Minify HTML', function () {
     var options = this.options();
     grunt.verbose.writeflags(options, 'Options');
 
-    this.files.forEach(function(f) {
-      var max = f.src.filter(function(filepath) {
+    this.files.forEach(function (file) {
+      var max = file.src.filter(function (filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
@@ -33,11 +33,10 @@ module.exports = function(grunt) {
       if (min.length < 1) {
         grunt.log.warn('Destination not written because minified HTML was empty.');
       } else {
-        grunt.file.write(f.dest, min);
-        grunt.log.writeln('File ' + f.dest + ' created.');
+        grunt.file.write(file.dest, min);
+        grunt.log.writeln('File ' + file.dest + ' created.');
         helper.minMaxInfo(min, max);
       }
     });
-
   });
 };

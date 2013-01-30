@@ -142,11 +142,12 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
- * 2013-01-08   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
- * 2012-10-31   v0.1.0   Initial release.
+ * 2013-01-30   v0.1.1rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
+ * 2013-01-09   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
+ * 2012-11-01   v0.1.0   Initial release.
 
 ---
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Fri Jan 11 2013 17:52:51.*
+*This file was generated on Wed Jan 30 2013 02:19:30.*

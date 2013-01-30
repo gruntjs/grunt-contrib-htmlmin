@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-htmlmin",
   "description": "Minify HTML",
-  "version": "0.1.1rc5",
+  "version": "0.1.1rc7",
   "homepage": "https://github.com/gruntjs/grunt-contrib-htmlmin",
   "author": {
     "name": "Grunt Team",
@@ -22,21 +22,21 @@
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">=0.8.0"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
     "html-minifier": "~0.4.5",
-    "grunt-lib-contrib": "~0.5.1"
+    "grunt-lib-contrib": "~0.5.2"
   },
   "devDependencies": {
     "grunt-contrib-internal": "*",
-    "grunt-contrib-clean": "~0.4.0rc5",
-    "grunt-contrib-jshint": "~0.1.1rc5",
-    "grunt-contrib-nodeunit": "~0.1.2rc5",
-    "grunt": "~0.4.0rc5"
+    "grunt-contrib-clean": "0.4.0rc6",
+    "grunt-contrib-jshint": "0.1.1rc6",
+    "grunt-contrib-nodeunit": "0.1.2rc6",
+    "grunt": "0.4.0rc7"
   },
   "keywords": [
     "gruntplugin",
