@@ -150,6 +150,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2013-02-17   v0.1.1   First official release for Grunt 0.4.0.
  * 2013-01-29   v0.1.1rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
  * 2013-01-08   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
  * 2012-10-31   v0.1.0   Initial release.
@@ -158,4 +159,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Mon Feb 18 2013 09:03:03.*
+*This file was generated on Mon Feb 18 2013 10:16:40.*
