@@ -32,11 +32,14 @@
     "grunt-lib-contrib": "~0.5.2"
   },
   "devDependencies": {
-    "grunt-contrib-internal": "*",
-    "grunt-contrib-clean": "0.4.0rc6",
-    "grunt-contrib-jshint": "0.1.1rc6",
-    "grunt-contrib-nodeunit": "0.1.2rc6",
-    "grunt": "0.4.0rc7"
+    "grunt-contrib-internal": "~0.4.2",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
   },
   "keywords": [
     "gruntplugin",
