@@ -1,3 +1,7 @@
+v0.1.2:
+  date: 2013-04-05
+  changes:
+    - Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
 v0.1.1:
   date: 2013-02-18
   changes:

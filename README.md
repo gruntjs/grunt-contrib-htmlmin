@@ -25,9 +25,7 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 ## Htmlmin task
 _Run this task with the `grunt htmlmin` command._
 
-Minifies HTML using [html-minifier](http://perfectionkills.com/experimenting-with-html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
-
-_This plugin is only compatible with Grunt `>= 0.4.0`._
+Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
 
 ### Options
 
@@ -150,13 +148,14 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
- * 2013-02-17   v0.1.1   First official release for Grunt 0.4.0.
- * 2013-01-29   v0.1.1rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
- * 2013-01-08   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
- * 2012-10-31   v0.1.0   Initial release.
+ * 2013-04-05   v0.1.2   Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
+ * 2013-02-18   v0.1.1   First official release for Grunt 0.4.0.
+ * 2013-01-30   v0.1.1rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
+ * 2013-01-09   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
+ * 2012-11-01   v0.1.0   Initial release.
 
 ---
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Wed Feb 20 2013 12:35:49.*
+*This file was generated on Fri Apr 05 2013 22:21:33.*

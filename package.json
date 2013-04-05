@@ -29,10 +29,10 @@
   },
   "dependencies": {
     "html-minifier": "~0.5.0",
-    "grunt-lib-contrib": "~0.5.2"
+    "grunt-lib-contrib": "~0.6.1"
   },
   "devDependencies": {
-    "grunt-contrib-internal": "~0.4.2",
+    "grunt-contrib-internal": "~0.4.4",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-jshint": "~0.2.0",
     "grunt-contrib-nodeunit": "~0.1.2",
