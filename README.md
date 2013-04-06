@@ -148,6 +148,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2013-04-06   v0.1.3   Fail target when minify encounters an error.
  * 2013-04-05   v0.1.2   Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
  * 2013-02-18   v0.1.1   First official release for Grunt 0.4.0.
  * 2013-01-30   v0.1.1rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
@@ -158,4 +159,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Fri Apr 05 2013 22:21:33.*
+*This file was generated on Sat Apr 06 2013 14:28:13.*
