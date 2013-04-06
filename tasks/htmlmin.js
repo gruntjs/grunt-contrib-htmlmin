@@ -17,6 +17,7 @@ module.exports = function (grunt) {
     grunt.verbose.writeflags(options, 'Options');
 
     this.files.forEach(function (file) {
+      var min;
       var max = file.src.filter(function (filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
@@ -29,7 +30,12 @@ module.exports = function (grunt) {
       .map(grunt.file.read)
       .join(grunt.util.normalizelf(grunt.util.linefeed));
 
-      var min = minify(max, options);
+      try {
+        min = minify(max, options);
+      } catch (err) {
+        grunt.warn(file.src + '\n' + err);
+      }
+
       if (min.length < 1) {
         grunt.log.warn('Destination not written because minified HTML was empty.');
       } else {
