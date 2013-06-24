@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "html-minifier": "~0.5.0",
+    "html-minifier": "~0.5.2",
     "grunt-lib-contrib": "~0.6.1"
   },
   "devDependencies": {
