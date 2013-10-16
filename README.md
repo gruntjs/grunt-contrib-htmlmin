@@ -2,6 +2,10 @@
 
 > Minify HTML
 
+Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier).
+
+**Bugs regarding the output should be reported on the [html-minifier issue tracker](https://github.com/kangax/html-minifier/issues/new), not here.**
+
 
 
 ## Getting Started
@@ -25,7 +29,6 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 ## Htmlmin task
 _Run this task with the `grunt htmlmin` command._
 
-Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
 
 ### Options
 
