@@ -33,9 +33,17 @@ module.exports = function (grunt) {
           'tmp/test.html': ['test/fixtures/test.html']
         }
       },
-      multiple: {
+      concat: {
         files: {
-          'tmp/multiple.html': ['test/fixtures/multiple*.html']
+          'tmp/concat.html': ['test/fixtures/concat*.html']
+        }
+      },
+      multiple: {
+        options: {
+          'concat': false
+        },
+        files: {
+          'tmp/': ['test/fixtures/multiple*.html']
         }
       },
       empty: {
