@@ -121,6 +121,16 @@ Remove empty elements.
 
 *Experimental*
 
+#### concat
+
+Type: `Boolean`  
+Default: `true`
+
+Concatinates files rather than minifying them one-by-one.
+
+
+### Usage Examples
+
 #### Example config
 
 ```javascript
@@ -148,9 +158,28 @@ grunt.initConfig({
 grunt.registerTask('default', ['htmlmin']);
 ```
 
+#### Minifying multiple files
+
+```javascript
+grunt.initConfig({
+  htmlmin: {
+    default: {
+      options: {
+        'concat': false
+      },
+      files: {
+        'dist/': ['src/*.html'],
+      }
+    }
+  }
+});
+
+grunt.registerTask('default', ['htmlmin']);
+```
 
 ## Release History
 
+ * 2013-12-11   v0.1.3   Made concat optional. Can minify multiple separate files.
  * 2013-04-06   v0.1.3   Fail target when minify encounters an error.
  * 2013-04-05   v0.1.2   Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
  * 2013-02-18   v0.1.1   First official release for Grunt 0.4.0.
