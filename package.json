@@ -20,9 +20,8 @@
       "url": "https://github.com/gruntjs/grunt-contrib-htmlmin/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "Gruntfile.js",
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "test": "grunt test"
@@ -47,5 +46,9 @@
     "min",
     "minify",
     "compress"
+  ],
+  "files": [
+    "tasks",
+    "LICENSE-MIT"
   ]
 }
