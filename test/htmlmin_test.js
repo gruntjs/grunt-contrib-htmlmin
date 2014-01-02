@@ -16,7 +16,7 @@ exports.htmlmin = {
     test.expect(1);
 
     var actual = grunt.file.read('tmp/multiple.html');
-    var expected = grunt.file.read('test/expected/test.html');
+    var expected = grunt.file.read('test/expected/multiple.html');
     test.equal(actual, expected, 'should minify multiple HTML files');
 
     test.done();
