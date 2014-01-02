@@ -38,6 +38,11 @@ module.exports = function (grunt) {
           'tmp/multiple.html': ['test/fixtures/multiple*.html']
         }
       },
+      dir: {
+        files: {
+          'tmp/': ['test/fixtures/html*.html']
+        }
+      },
       empty: {
         files: {
           'tmp/idontexist.html': ['test/fixtures/idontexist.html']

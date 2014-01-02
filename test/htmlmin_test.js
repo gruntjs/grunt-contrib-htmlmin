@@ -21,6 +21,22 @@ exports.htmlmin = {
 
     test.done();
   },
+
+  dir: function(test) {
+    test.expect(2);
+
+    var actual1 = grunt.file.read('tmp/html1.html');
+    var expected1 = grunt.file.read('test/expected/html1.html');
+
+    var actual2 = grunt.file.read('tmp/html2.html');
+    var expected2 = grunt.file.read('test/expected/html2.html');
+
+
+    test.equal(actual1, expected1, 'should minify dir HTML files');
+    test.equal(actual2, expected2, 'should minify dir HTML files');
+    test.done();
+  },
+
   empty: function(test) {
     test.expect(1);
 

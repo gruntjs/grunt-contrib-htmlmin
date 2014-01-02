@@ -138,6 +138,15 @@ grunt.initConfig({
         'dist/index.html': 'src/index.html',
         'dist/contact.html': 'src/contact.html'
       }
+    },
+    multiple:{
+      files:{                                   // min multiple files in one file
+        'dist/multiple.html': 'src/multiple*.html'
+      }
+    },
+    dir: {                                      // min dir
+      files: {
+      'dist/': 'src/*.html'
     }
   }
 });
