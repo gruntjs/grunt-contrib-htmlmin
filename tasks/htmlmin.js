@@ -14,35 +14,71 @@ module.exports = function (grunt) {
 
   grunt.registerMultiTask('htmlmin', 'Minify HTML', function () {
     var options = this.options();
+    var dest;
     grunt.verbose.writeflags(options, 'Options');
-
     this.files.forEach(function (file) {
-      var min;
-      var max = file.src.filter(function (filepath) {
-        // Warn on and remove invalid source files (if nonull was set).
-        if (!grunt.file.exists(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
-          return false;
-        } else {
-          return true;
-        }
-      })
-      .map(grunt.file.read)
-      .join(grunt.util.normalizelf(grunt.util.linefeed));
-
-      try {
-        min = minify(max, options);
-      } catch (err) {
-        grunt.warn(file.src + '\n' + err);
-      }
-
-      if (min.length < 1) {
-        grunt.log.warn('Destination not written because minified HTML was empty.');
+      console.log(JSON.stringify(file));
+      if (detectDestType(file.dest) === 'directory') {
+        file.src.forEach(function (filePath) {
+          var max = readSingleHtml(filePath);
+          dest = file.dest + getFileName(filePath);
+          writeMinHtml(max, dest, options);
+        });
       } else {
-        grunt.file.write(file.dest, min);
-        grunt.log.writeln('File ' + file.dest + ' created.');
-        helper.minMaxInfo(min, max);
+        var max = readMultHtml(file);
+        dest = file.dest;
+        writeMinHtml(max, dest, options);
       }
     });
   });
+
+  var detectDestType = function (dest) {
+    if (grunt.util._.endsWith(dest, '/')) {
+      return 'directory';
+    } else {
+      return 'file';
+    }
+  };
+
+  var getFileName = function (filePath) {
+    return filePath.substr(filePath.lastIndexOf('/'));
+  };
+
+  var readMultHtml = function (file) {
+
+    return file.src.filter(function (filepath) {
+      // Warn on and remove invalid source files (if nonull was set).
+      if (!grunt.file.exists(filepath)) {
+        grunt.log.warn('Source file "' + filepath + '" not found.');
+        return false;
+      } else {
+        return true;
+      }
+    })
+      .map(grunt.file.read)
+      .join(grunt.util.normalizelf(grunt.util.linefeed));
+  };
+
+  var readSingleHtml = function (filePath) {
+    console.log(filePath);
+    return grunt.file.read(filePath);
+  };
+
+  var writeMinHtml = function (max, dest, options) {
+    var min;
+    try {
+      min = minify(max, options);
+    } catch (err) {
+      grunt.warn(dest + '\n' + err);
+    }
+
+    if (min.length < 1) {
+      grunt.log.warn('Destination not written because minified HTML was empty.');
+    } else {
+
+      grunt.file.write(dest, min);
+      grunt.log.writeln('File ' + dest + ' created.');
+      helper.minMaxInfo(min, max);
+    }
+  };
 };
