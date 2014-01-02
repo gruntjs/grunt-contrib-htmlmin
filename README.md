@@ -138,15 +138,6 @@ grunt.initConfig({
         'dist/index.html': 'src/index.html',
         'dist/contact.html': 'src/contact.html'
       }
-    },
-    multiple:{
-      files:{                                   // min multiple files in one file
-        'dist/multiple.html': 'src/multiple*.html'
-      }
-    },
-    dir: {                                      // min dir
-      files: {
-      'dist/': 'src/*.html'
     }
   }
 });
@@ -168,4 +159,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Thu Jan 02 2014 16:26:38.*
+*This file was generated on Thu Jan 02 2014 22:57:34.*
