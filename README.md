@@ -1,10 +1,6 @@
-# grunt-contrib-htmlmin [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-htmlmin)
+# grunt-contrib-htmlmin v0.1.3 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin)
 
 > Minify HTML
-
-Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier).
-
-**Bugs regarding the output should be reported on the [html-minifier issue tracker](https://github.com/kangax/html-minifier/issues/new), not here.**
 
 
 
@@ -29,6 +25,7 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 ## Htmlmin task
 _Run this task with the `grunt htmlmin` command._
 
+Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
 
 ### Options
 
@@ -162,4 +159,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Sat Apr 06 2013 14:28:13.*
+*This file was generated on Thu Jan 02 2014 22:57:34.*
