@@ -11,6 +11,7 @@
 module.exports = function (grunt) {
   var minify = require('html-minifier').minify;
   var helper = require('grunt-lib-contrib').init(grunt);
+  var chalk = require('chalk');
 
   grunt.registerMultiTask('htmlmin', 'Minify HTML', function () {
     var options = this.options();
@@ -40,7 +41,7 @@ module.exports = function (grunt) {
         grunt.log.warn('Destination not written because minified HTML was empty.');
       } else {
         grunt.file.write(file.dest, min);
-        grunt.log.writeln('File ' + file.dest + ' created.');
+        grunt.log.writeln('File ' + chalk.cyan(file.dest) + ' created.');
         helper.minMaxInfo(min, max);
       }
     });
