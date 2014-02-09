@@ -33,11 +33,6 @@ module.exports = function (grunt) {
           'tmp/test.html': ['test/fixtures/test.html']
         }
       },
-      multiple: {
-        files: {
-          'tmp/multiple.html': ['test/fixtures/multiple*.html']
-        }
-      },
       empty: {
         files: {
           'tmp/idontexist.html': ['test/fixtures/idontexist.html']

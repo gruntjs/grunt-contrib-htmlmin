@@ -1,5 +1,4 @@
 'use strict';
-
 var grunt = require('grunt');
 
 exports.htmlmin = {
@@ -9,15 +8,6 @@ exports.htmlmin = {
     var actual = grunt.file.read('tmp/test.html');
     var expected = grunt.file.read('test/expected/test.html');
     test.equal(actual, expected, 'should minify HTML');
-
-    test.done();
-  },
-  multiple: function(test) {
-    test.expect(1);
-
-    var actual = grunt.file.read('tmp/multiple.html');
-    var expected = grunt.file.read('test/expected/test.html');
-    test.equal(actual, expected, 'should minify multiple HTML files');
 
     test.done();
   },
