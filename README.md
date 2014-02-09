@@ -151,6 +151,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2014-02-09   v0.2.0   Rewrite task. Drop concat support.
  * 2013-04-06   v0.1.3   Fail target when minify encounters an error.
  * 2013-04-05   v0.1.2   Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
  * 2013-02-18   v0.1.1   First official release for Grunt 0.4.0.
