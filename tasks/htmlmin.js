@@ -2,7 +2,7 @@
  * grunt-contrib-htmlmin
  * http://gruntjs.com/
  *
- * Copyright (c) 2012 Sindre Sorhus, contributors
+ * Copyright (c) 2014 Sindre Sorhus, contributors
  * Licensed under the MIT license.
  */
 
