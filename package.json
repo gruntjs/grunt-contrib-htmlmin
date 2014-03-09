@@ -2,11 +2,18 @@
   "name": "grunt-contrib-htmlmin",
   "description": "Minify HTML",
   "version": "0.2.0",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-htmlmin",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
   },
-  "repository": "gruntjs/grunt-contrib-htmlmin",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gruntjs/grunt-contrib-htmlmin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gruntjs/grunt-contrib-htmlmin/issues"
+  },
   "licenses": [
     {
       "type": "MIT",
