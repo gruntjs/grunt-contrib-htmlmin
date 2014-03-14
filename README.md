@@ -1,10 +1,6 @@
-# grunt-contrib-htmlmin [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-htmlmin)
+# grunt-contrib-htmlmin v0.2.0 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin)
 
 > Minify HTML
-
-Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier).
-
-**Bugs regarding the output should be reported on the [html-minifier issue tracker](https://github.com/kangax/html-minifier/issues/new), not here.**
 
 
 
@@ -29,97 +25,11 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 ## Htmlmin task
 _Run this task with the `grunt htmlmin` command._
 
+Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
 
 ### Options
 
-See the [html-minifier docs](http://perfectionkills.com/experimenting-with-html-minifier/#options) for more in-depth explanation of the options and caveats.
-
-#### removeComments
-
-Type: `Boolean`  
-Default: `false`
-
-Strip HTML comments.
-
-#### removeCommentsFromCDATA
-
-Type: `Boolean`  
-Default: `false`
-
-Remove HTML comments from inside `<script>` and `<style>`.
-
-#### removeCDATASectionsFromCDATA
-
-Type: `Boolean`  
-Default: `false`
-
-Remove CDATA sections from inside `<script>` and `<style>`.
-
-#### collapseWhitespace
-
-Type: `Boolean`  
-Default: `false`
-
-Collapse white space that contributes to text nodes in a document tree.
-
-It doesn't affect significant white space; e.g. in contents of elements like SCRIPT, STYLE, PRE or TEXTAREA.
-
-`<div> <p>    foo </p>    </div>` => `<div><p>foo</p></div>`
-
-#### collapseBooleanAttributes
-
-Type: `Boolean`  
-Default: `false`
-
-Collapse boolean attributes.
-
-`<input disabled="disabled">` => `<input disabled>`
-
-#### removeAttributeQuotes
-
-Type: `Boolean`  
-Default: `false`
-
-Remove attribute quotes when it's safe to do so.
-
-`<p id="foo">` => `<p id=foo>`
-
-#### removeRedundantAttributes
-
-Type: `Boolean`  
-Default: `false`
-
-Remove redundant attributes like `type="text/javascript"`.
-
-#### useShortDoctype
-
-Type: `Boolean`  
-Default: `false`
-
-Replace doctype with the short HTML5 version `<!DOCTYPE html>`.
-
-#### removeEmptyAttributes
-
-Type: `Boolean`  
-Default: `false`
-
-Remove empty (or blank) attributes.
-
-#### removeOptionalTags
-
-Type: `Boolean`  
-Default: `false`
-
-Some elements are allowed to have their tags omitted, like `</td>`.
-
-#### removeEmptyElements
-
-Type: `Boolean`  
-Default: `false`
-
-Remove empty elements.
-
-*Experimental*
+See the html-minifier [options](https://github.com/kangax/html-minifier#options-quick-reference).
 
 #### Example config
 
@@ -151,7 +61,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
- * 2014-02-09   v0.2.0   Rewrite task. Drop concat support.
+ * 2014-02-09   v0.2.0   Rewrite task. Drop concat support.
  * 2013-04-06   v0.1.3   Fail target when minify encounters an error.
  * 2013-04-05   v0.1.2   Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
  * 2013-02-18   v0.1.1   First official release for Grunt 0.4.0.
@@ -163,4 +73,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Sat Apr 06 2013 14:28:13.*
+*This file was generated on Fri Mar 14 2014 17:58:26.*
