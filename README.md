@@ -1,4 +1,4 @@
-# grunt-contrib-htmlmin v0.2.0 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin)
+# grunt-contrib-htmlmin v0.3.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin)
 
 > Minify HTML
 
@@ -61,6 +61,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2014-05-05   v0.3.0   Drop node.js 0.8 support. Updated to htmlmin 0.6.0.
  * 2014-02-09   v0.2.0   Rewrite task. Drop concat support.
  * 2013-04-06   v0.1.3   Fail target when minify encounters an error.
  * 2013-04-05   v0.1.2   Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
@@ -73,4 +74,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Fri Mar 14 2014 17:58:26.*
+*This file was generated on Mon May 05 2014 02:02:08.*

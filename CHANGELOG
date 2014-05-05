@@ -1,3 +1,8 @@
+v0.3.0:
+  date: 2014-05-05
+  changes:
+    - Drop node.js 0.8 support.
+    - Updated to htmlmin 0.6.0.
 v0.2.0:
   date: 2014-02-09
   changes:
