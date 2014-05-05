@@ -8,7 +8,6 @@
 
 'use strict';
 var chalk = require('chalk');
-var eachAsync = require('each-async');
 var prettyBytes = require('pretty-bytes');
 var minify = require('html-minifier').minify;
 
