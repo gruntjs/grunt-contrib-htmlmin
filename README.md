@@ -1,4 +1,4 @@
-# grunt-contrib-htmlmin v0.3.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin)
+# grunt-contrib-htmlmin v0.3.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin"><img src="https://ci.appveyor.com/api/projects/status/fmp4q531iui753to/branch/master" alt="Build Status: Windows" height="18" /></a>
 
 > Minify HTML
 
@@ -74,4 +74,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Mon May 05 2014 02:02:08.*
+*This file was generated on Mon May 05 2014 02:08:16.*
