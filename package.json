@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-htmlmin",
   "description": "Minify HTML",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
@@ -20,7 +20,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "html-minifier": "~0.5.0",
+    "html-minifier": "~0.6.0",
     "chalk": "~0.4.0",
     "each-async": "~0.1.2",
     "pretty-bytes": "~0.1.0"
