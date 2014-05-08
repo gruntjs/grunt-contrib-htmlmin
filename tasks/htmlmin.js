@@ -17,18 +17,7 @@ module.exports = function (grunt) {
 
     this.files.forEach(function (file) {
       var min;
-
-      file.src.forEach(function(src){
-        var dest = file.dest;
-        if(grunt.file.isDir(dest)){
-          dest = dest + '/' + (function (fileName) {
-            if (fileName.indexOf('/') > -1) {
-              var filePathArr = fileName.split('/');
-              return filePathArr[ filePathArr.length - 1];
-            }
-            return fileName;
-          })(src);
-        }
+      var src = file.src[0];
 
       if (!grunt.file.exists(src || ' ')) {
         return grunt.log.warn('Source file "' + chalk.cyan(src) + '" not found.');
@@ -45,10 +34,9 @@ module.exports = function (grunt) {
       if (min.length < 1) {
         grunt.log.warn('Destination not written because minified HTML was empty.');
       } else {
-        grunt.file.write(dest, min);
-        grunt.log.writeln('Minified ' + chalk.cyan(dest) + ' ' + prettyBytes(max.length) + ' → ' + prettyBytes(min.length));
+        grunt.file.write(file.dest, min);
+        grunt.log.writeln('Minified ' + chalk.cyan(file.dest) + ' ' + prettyBytes(max.length) + ' → ' + prettyBytes(min.length));
       }
-      });
     });
   });
 };
