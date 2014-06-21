@@ -25,7 +25,7 @@ module.exports = function (grunt) {
 
       var max = grunt.file.read(src);
 
-      if (max.length < 1) {
+      if (max.length === 0) {
         return grunt.log.warn('Destination not written because source file was empty.');
       }
 
@@ -35,12 +35,12 @@ module.exports = function (grunt) {
         return grunt.warn(file.src + '\n' + err);
       }
 
-      if (min.length < 1) {
-        grunt.log.warn('Destination not written because minified HTML was empty.');
-      } else {
-        grunt.file.write(file.dest, min);
-        grunt.log.writeln('Minified ' + chalk.cyan(file.dest) + ' ' + prettyBytes(max.length) + ' → ' + prettyBytes(min.length));
+      if (min.length === 0) {
+        return grunt.log.warn('Destination not written because minified HTML was empty.');
       }
+
+      grunt.file.write(file.dest, min);
+      grunt.log.writeln('Minified ' + chalk.cyan(file.dest) + ' ' + prettyBytes(max.length) + ' → ' + prettyBytes(min.length));
     });
   });
 };
