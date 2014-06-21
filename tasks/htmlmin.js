@@ -25,6 +25,10 @@ module.exports = function (grunt) {
 
       var max = grunt.file.read(src);
 
+      if (max.length < 1) {
+        return grunt.log.warn('Destination not written because source file was empty.');
+      }
+
       try {
         min = minify(max, options);
       } catch (err) {
