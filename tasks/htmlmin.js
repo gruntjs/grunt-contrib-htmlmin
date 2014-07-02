@@ -26,7 +26,7 @@ module.exports = function (grunt) {
       var max = grunt.file.read(src);
 
       if (max.length === 0) {
-        return grunt.log.warn('Destination not written because source file was empty.');
+        return grunt.log.warn('Destination ' + chalk.cyan(src) + ' not written because source file was empty.');
       }
 
       try {
@@ -36,7 +36,7 @@ module.exports = function (grunt) {
       }
 
       if (min.length === 0) {
-        return grunt.log.warn('Destination not written because minified HTML was empty.');
+        return grunt.log.warn('Destination ' + chalk.cyan(src) + ' not written because there was nothing to minify.');
       }
 
       grunt.file.write(file.dest, min);
