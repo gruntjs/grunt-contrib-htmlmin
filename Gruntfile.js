@@ -35,9 +35,18 @@ module.exports = function (grunt) {
       },
       empty: {
         files: {
-          'tmp/idontexist.html': ['test/fixtures/idontexist.html']
+          'tmp/idontexist.html': ['test/fixtures/idontexist.html'],
+          'tmp/iamempty.html': ['test/fixtures/iamempty.html']
         }
-      }
+      },
+      copyEmpty: {
+        options: {
+          copyEmptyFiles: true
+        },
+        files: {
+          'tmp/emptybutcopied.html': ['test/fixtures/iamempty.html']
+        }
+      },
     },
     nodeunit: {
       tests: ['test/*_test.js']

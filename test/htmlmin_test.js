@@ -11,11 +11,26 @@ exports.htmlmin = {
 
     test.done();
   },
-  empty: function(test) {
+  missing: function(test) {
     test.expect(1);
 
-    test.ok(!grunt.file.exists('tmp/idontexist.html'), 'Empty minified file should not exist');
+    test.ok(!grunt.file.exists('tmp/idontexist.html'), 'Missing minified file should not exist');
 
     test.done();
+  },
+  empty: function(test) {
+	test.expect(1);
+
+	test.ok(!grunt.file.exists('tmp/iamempty.html'), 'Empty minified file should not exist');
+
+	test.done();
+  },
+  copyEmpty: function(test) {
+	test.expect(1);
+
+	var actual = grunt.file.read('tmp/emptybutcopied.html');
+	test.equal(actual, '', 'should copy empty files when asked');
+
+	test.done();
   }
 };
