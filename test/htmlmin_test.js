@@ -11,10 +11,10 @@ exports.htmlmin = {
 
     test.done();
   },
-  empty: function(test) {
+  missing: function(test) {
     test.expect(1);
 
-    test.ok(!grunt.file.exists('tmp/idontexist.html'), 'Empty minified file should not exist');
+    test.ok(!grunt.file.exists('tmp/idontexist.html'), 'Missing minified file should not exist');
 
     test.done();
   }
