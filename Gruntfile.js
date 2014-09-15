@@ -35,7 +35,8 @@ module.exports = function (grunt) {
       },
       empty: {
         files: {
-          'tmp/idontexist.html': ['test/fixtures/idontexist.html']
+          'tmp/idontexist.html': ['test/fixtures/idontexist.html'],
+          'tmp/iamempty.html': ['test/fixtures/iamempty.html']
         }
       }
     },
