@@ -24,5 +24,13 @@ exports.htmlmin = {
 	test.ok(!grunt.file.exists('tmp/iamempty.html'), 'Empty minified file should not exist');
 
 	test.done();
+  },
+  copyEmpty: function(test) {
+	test.expect(1);
+
+	var actual = grunt.file.read('tmp/emptybutcopied.html');
+	test.equal(actual, '', 'should copy empty files when asked');
+
+	test.done();
   }
 };
