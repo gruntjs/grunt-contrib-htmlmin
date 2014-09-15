@@ -6,7 +6,8 @@ grunt.initConfig({
     dist: {                                      // Target
       options: {                                 // Target options
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
+        copyEmptyFiles: true
       },
       files: {                                   // Dictionary of files
         'dist/index.html': 'src/index.html',     // 'destination': 'source'
