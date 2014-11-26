@@ -26,6 +26,7 @@ grunt.initConfig({
         src: '**/*.html',                        // Source
         dest: 'dist/'                            // Destination
       }]
+    }
   }
 });
 
