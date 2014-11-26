@@ -18,7 +18,14 @@ grunt.initConfig({
         'dist/index.html': 'src/index.html',
         'dist/contact.html': 'src/contact.html'
       }
-    }
+    },
+    multiple: {                                  // Target
+      files: [{                                  // Dictionary of files
+        expand: true,
+        cwd: 'app/',                             // Project root
+        src: '**/*.html',                        // Source
+        dest: 'dist/'                            // Destination
+      }]
   }
 });
 
