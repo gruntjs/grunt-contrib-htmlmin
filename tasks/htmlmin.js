@@ -14,6 +14,7 @@ var minify = require('html-minifier').minify;
 module.exports = function (grunt) {
   grunt.registerMultiTask('htmlmin', 'Minify HTML', function () {
     var options = this.options();
+	var count = 0;
 
     this.files.forEach(function (file) {
       var min;
@@ -39,8 +40,10 @@ module.exports = function (grunt) {
         return grunt.log.warn('Destination ' + chalk.cyan(src) + ' not written because there was nothing to minify.');
       }
 
+	  count++;
       grunt.file.write(file.dest, min);
       grunt.log.writeln('Minified ' + chalk.cyan(file.dest) + ' ' + prettyBytes(max.length) + ' → ' + prettyBytes(min.length));
     });
+    grunt.log.writeln('Minified ' + chalk.cyan(count) + ' files' + (this.files.length !== count ? ' (' + chalk.red(this.files.length - count) + ' failed)' : '') +'.');
   });
 };
