@@ -1,13 +1,11 @@
-# grunt-contrib-htmlmin v0.3.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin"><img src="https://ci.appveyor.com/api/projects/status/fmp4q531iui753to/branch/master" alt="Build Status: Windows" height="18" /></a>
+# grunt-contrib-htmlmin v0.4.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/fmp4q531iui753to/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
 
 > Minify HTML
-
-*Issues with the output should be reported on the htmlmin [issue tracker](https://github.com/kangax/html-minifier/issues/new).*
 
 
 
 ## Getting Started
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -27,15 +25,15 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 ## Htmlmin task
 _Run this task with the `grunt htmlmin` command._
 
-Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier).
+*Issues with the output should be reported on the `htmlmin` [issue tracker](https://github.com/kangax/html-minifier/issues/new).*
 
 ### Options
 
-See the html-minifier [options](https://github.com/kangax/html-minifier#options-quick-reference).
+See the `html-minifier` [options](https://github.com/kangax/html-minifier#options-quick-reference).
 
-#### Example config
+#### Example
 
-```javascript
+```js
 grunt.initConfig({
   htmlmin: {                                     // Task
     dist: {                                      // Target
@@ -53,14 +51,6 @@ grunt.initConfig({
         'dist/index.html': 'src/index.html',
         'dist/contact.html': 'src/contact.html'
       }
-    },
-    multiple: {                                  // Target
-      files: [{                                  // Dictionary of files
-        expand: true,
-        cwd: 'app/',                             // Project root
-        src: '**/*.html',                        // Source
-        dest: 'dist/'                            // Destination
-      }]
     }
   }
 });
@@ -69,9 +59,9 @@ grunt.registerTask('default', ['htmlmin']);
 ```
 
 
-
 ## Release History
 
+ * 2015-02-06   v0.4.0   Updated to `htmlmin` 0.7.0.
  * 2014-05-05   v0.3.0   Drop node.js 0.8 support. Updated to htmlmin 0.6.0.
  * 2014-02-09   v0.2.0   Rewrite task. Drop concat support.
  * 2013-04-06   v0.1.3   Fail target when minify encounters an error.
@@ -85,4 +75,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Mon May 05 2014 02:08:16.*
+*This file was generated on Fri Feb 06 2015 17:15:43.*

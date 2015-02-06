@@ -1,1 +1,1 @@
-Minifies HTML using [html-minifier](https://github.com/kangax/html-minifier). Bugs regarding the output should be reported [here](https://github.com/kangax/html-minifier/issues/new).
+*Issues with the output should be reported on the `htmlmin` [issue tracker](https://github.com/kangax/html-minifier/issues/new).*
