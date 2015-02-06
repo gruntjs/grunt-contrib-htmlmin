@@ -44,5 +44,6 @@
   "files": [
     "tasks",
     "LICENSE-MIT"
-  ]
+  ],
+  "appveyor_id": "fmp4q531iui753to"
 }
