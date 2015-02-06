@@ -2,7 +2,7 @@
 var grunt = require('grunt');
 
 exports.htmlmin = {
-  compile: function(test) {
+  compile: function (test) {
     test.expect(1);
 
     var actual = grunt.file.read('tmp/test.html');
@@ -11,7 +11,7 @@ exports.htmlmin = {
 
     test.done();
   },
-  empty: function(test) {
+  empty: function (test) {
     test.expect(1);
 
     test.ok(!grunt.file.exists('tmp/idontexist.html'), 'Empty minified file should not exist');

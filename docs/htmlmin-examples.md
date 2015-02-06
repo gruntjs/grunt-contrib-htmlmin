@@ -1,6 +1,6 @@
-## Example config
+## Example
 
-```javascript
+```js
 grunt.initConfig({
   htmlmin: {                                     // Task
     dist: {                                      // Target

@@ -1,13 +1,4 @@
-/*
- * grunt-contrib-sass
- * http://gruntjs.com/
- *
- * Copyright (c) 2015 Sindre Sorhus, contributors
- * Licensed under the MIT license.
- */
-
 'use strict';
-
 module.exports = function (grunt) {
   grunt.initConfig({
     jshint: {
@@ -30,17 +21,17 @@ module.exports = function (grunt) {
       },
       compile: {
         files: {
-          'tmp/test.html': ['test/fixtures/test.html']
+          'tmp/test.html': 'test/fixtures/test.html'
         }
       },
       empty: {
         files: {
-          'tmp/idontexist.html': ['test/fixtures/idontexist.html']
+          'tmp/idontexist.html': 'test/fixtures/idontexist.html'
         }
       }
     },
     nodeunit: {
-      tests: ['test/*_test.js']
+      tests: ['test/test.js']
     }
   });
 
