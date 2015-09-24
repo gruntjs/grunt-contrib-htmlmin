@@ -1,4 +1,4 @@
-# grunt-contrib-htmlmin v0.4.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
+# grunt-contrib-htmlmin v0.5.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
 
 > Minify HTML
 
@@ -61,6 +61,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2015-09-25   v0.5.0   Updated to `htmlmin` 0.8.0.
  * 2015-02-06   v0.4.0   Updated to `htmlmin` 0.7.0.
  * 2014-05-05   v0.3.0   Drop node.js 0.8 support. Updated to htmlmin 0.6.0.
  * 2014-02-09   v0.2.0   Rewrite task. Drop concat support.
@@ -75,4 +76,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Fri Feb 06 2015 11:20:40.*
+*This file was generated on Fri Sep 25 2015 02:00:08.*
