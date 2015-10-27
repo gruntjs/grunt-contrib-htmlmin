@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "html-minifier": "^0.8.0",
+    "html-minifier": "^1.0.0",
     "pretty-bytes": "^2.0.1"
   },
   "devDependencies": {
