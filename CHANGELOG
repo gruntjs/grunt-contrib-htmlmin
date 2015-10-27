@@ -1,16 +1,20 @@
+v0.6.0:
+  date: 2015-10-28
+  changes:
+    - Updated to `html-minifier` 1.0.0.
 v0.5.0:
   date: 2015-09-25
   changes:
-    - Updated to `htmlmin` 0.8.0.
+    - Updated to `html-minifier` 0.8.0.
 v0.4.0:
   date: 2015-02-06
   changes:
-    - Updated to `htmlmin` 0.7.0.
+    - Updated to `html-minifier` 0.7.0.
 v0.3.0:
   date: 2014-05-05
   changes:
     - Drop node.js 0.8 support.
-    - Updated to htmlmin 0.6.0.
+    - Updated to `html-minifier` 0.6.0.
 v0.2.0:
   date: 2014-02-09
   changes:
@@ -22,7 +26,7 @@ v0.1.3:
 v0.1.2:
   date: 2013-04-05
   changes:
-    - Update html-minifier which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
+    - Update `html-minifier` which fixes IE conditional comments and prefixed HTML elements `<ng-include>` `<ng:include>`.
 v0.1.1:
   date: 2013-02-18
   changes:
