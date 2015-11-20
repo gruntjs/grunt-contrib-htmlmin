@@ -39,7 +39,7 @@
     "optimize"
   ],
   "files": [
-    "tasks", "test", "docs", "*"
+    "tasks"
   ],
   "appveyor_id": "sn73i2qggqeolnc2"
 }

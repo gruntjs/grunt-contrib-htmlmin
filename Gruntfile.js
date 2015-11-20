@@ -24,6 +24,10 @@ module.exports = function (grunt) {
           'tmp/test.html': 'test/fixtures/test.html'
         }
       },
+      glob: {
+        src: ['test/fixtures/**/*.html'],
+        dest: 'tmp/'
+      },
       empty: {
         files: {
           'tmp/idontexist.html': 'test/fixtures/idontexist.html'
