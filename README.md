@@ -1,11 +1,10 @@
-# grunt-contrib-htmlmin v0.6.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
+# grunt-contrib-htmlmin v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
 
 > Minify HTML
 
 
 
 ## Getting Started
-This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -61,6 +60,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2016-03-04   v1.0.0   Updated to `html-minifier` 1.2.0. Point main to task. Drop peerDeps.
  * 2015-10-28   v0.6.0   Updated to `html-minifier` 1.0.0.
  * 2015-09-25   v0.5.0   Updated to `html-minifier` 0.8.0.
  * 2015-02-06   v0.4.0   Updated to `html-minifier` 0.7.0.
@@ -77,4 +77,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Wed Oct 28 2015 01:32:22.*
+*This file was generated on Fri Mar 04 2016 12:59:20.*

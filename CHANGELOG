@@ -1,3 +1,9 @@
+v1.0.0:
+  date: 2016-03-04
+  changes:
+    - Updated to `html-minifier` 1.2.0.
+    - Point main to task.
+    - Drop peerDeps.
 v0.6.0:
   date: 2015-10-28
   changes:
