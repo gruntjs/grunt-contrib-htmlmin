@@ -60,6 +60,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2016-03-31   v1.2.0   Updated to `html-minifier` to 1.4.0.
  * 2016-03-18   v1.1.0   Updated to `html-minifier` 1.3.0.
  * 2016-03-04   v1.0.0   Updated to `html-minifier` 1.2.0. Point main to task. Drop peerDeps.
  * 2015-10-28   v0.6.0   Updated to `html-minifier` 1.0.0.
@@ -78,4 +79,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Fri Mar 18 2016 18:56:49.*
+*This file was generated on Thu Mar 31 2016 17:12:08.*
