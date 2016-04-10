@@ -1,4 +1,4 @@
-# grunt-contrib-htmlmin v1.2.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
+# grunt-contrib-htmlmin v1.3.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
 
 > Minify HTML
 
@@ -60,7 +60,8 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
- * 2016-03-31   v1.2.0   Updated to `html-minifier` to 1.4.0.
+ * 2016-04-10   v1.3.0   Updated to `html-minifier` 1.5.0.
+ * 2016-03-31   v1.2.0   Updated to `html-minifier` 1.4.0.
  * 2016-03-18   v1.1.0   Updated to `html-minifier` 1.3.0.
  * 2016-03-04   v1.0.0   Updated to `html-minifier` 1.2.0. Point main to task. Drop peerDeps.
  * 2015-10-28   v0.6.0   Updated to `html-minifier` 1.0.0.
@@ -79,4 +80,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Thu Mar 31 2016 17:14:37.*
+*This file was generated on Sun Apr 10 2016 14:29:25.*
