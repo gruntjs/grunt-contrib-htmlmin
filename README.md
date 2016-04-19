@@ -1,4 +1,4 @@
-# grunt-contrib-htmlmin v1.3.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
+# grunt-contrib-htmlmin v1.4.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
 
 > Minify HTML
 
@@ -60,6 +60,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2016-04-19   v1.4.0   Updated to `html-minifier` 2.0.0.
  * 2016-04-10   v1.3.0   Updated to `html-minifier` 1.5.0.
  * 2016-03-31   v1.2.0   Updated to `html-minifier` 1.4.0.
  * 2016-03-18   v1.1.0   Updated to `html-minifier` 1.3.0.
@@ -80,4 +81,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Sun Apr 10 2016 14:29:25.*
+*This file was generated on Tue Apr 19 2016 09:50:18.*
