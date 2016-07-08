@@ -9,7 +9,7 @@
   "repository": "gruntjs/grunt-contrib-htmlmin",
   "license": "MIT",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0"
   },
   "main": "tasks/htmlmin.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "html-minifier": "~2.1.7",
+    "html-minifier": "~3.0.1",
     "pretty-bytes": "^3.0.1"
   },
   "devDependencies": {
