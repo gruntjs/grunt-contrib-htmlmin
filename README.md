@@ -1,4 +1,4 @@
-# grunt-contrib-htmlmin v1.4.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
+# grunt-contrib-htmlmin v1.5.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
 
 > Minify HTML
 
@@ -60,18 +60,19 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
- * 2016-04-19   v1.4.0   Updated to `html-minifier` 2.0.0.
- * 2016-04-10   v1.3.0   Updated to `html-minifier` 1.5.0.
- * 2016-03-31   v1.2.0   Updated to `html-minifier` 1.4.0.
- * 2016-03-18   v1.1.0   Updated to `html-minifier` 1.3.0.
- * 2016-03-04   v1.0.0   Updated to `html-minifier` 1.2.0. Point main to task. Drop peerDeps.
- * 2015-10-28   v0.6.0   Updated to `html-minifier` 1.0.0.
- * 2015-09-25   v0.5.0   Updated to `html-minifier` 0.8.0.
- * 2015-02-06   v0.4.0   Updated to `html-minifier` 0.7.0.
- * 2014-05-05   v0.3.0   Drop Node.js 0.8 support. Updated to `html-minifier` 0.6.0.
+ * 2016-07-13   v1.5.0   Updated html-minifier to v2.1.7.
+ * 2016-04-19   v1.4.0   Updated html-minifier to v2.0.0.
+ * 2016-04-10   v1.3.0   Updated html-minifier to v1.5.0.
+ * 2016-03-31   v1.2.0   Updated html-minifier to v1.4.0.
+ * 2016-03-18   v1.1.0   Updated html-minifier to v1.3.0.
+ * 2016-03-04   v1.0.0   Updated html-minifier to v1.2.0. Point main to task. Drop peerDeps.
+ * 2015-10-28   v0.6.0   Updated html-minifier to v1.0.0.
+ * 2015-09-25   v0.5.0   Updated html-minifier to v0.8.0.
+ * 2015-02-06   v0.4.0   Updated html-minifier to v0.7.0.
+ * 2014-05-05   v0.3.0   Drop Node.js 0.8 support. Updated html-minifier to v0.6.0.
  * 2014-02-09   v0.2.0   Rewrite task. Drop concat support.
  * 2013-04-06   v0.1.3   Fail target when minify encounters an error.
- * 2013-04-05   v0.1.2   Update `html-minifier` which fixes IE conditional comments and prefixed HTML elements `<ng-include>`, `<ng:include>`.
+ * 2013-04-05   v0.1.2   Update html-minifier to vwhich fixes IE conditional comments and prefixed HTML elements `<ng-include>`, `<ng:include>`.
  * 2013-02-18   v0.1.1   First official release for Grunt 0.4.0.
  * 2013-01-30   v0.1.1rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
  * 2013-01-09   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to `this.filesSrc` API.
@@ -81,4 +82,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Tue Apr 19 2016 09:50:18.*
+*This file was generated on Wed Jul 13 2016 09:05:04.*
