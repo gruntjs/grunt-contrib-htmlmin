@@ -42,5 +42,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-internal');
 
   grunt.registerTask('test', ['jshint', 'clean', 'htmlmin', 'nodeunit']);
-  grunt.registerTask('default', ['test', 'build-contrib']);
+  grunt.registerTask('default', ['test', 'contrib-core', 'contrib-ci:skipIfExists']);
 };
