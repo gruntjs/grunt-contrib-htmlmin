@@ -75,6 +75,7 @@ grunt.initConfig({
     dev: {                                       // Another target
         files: [{
           expand: true,
+          cwd: 'app',
           src: ['src/**/*.html', '*.html'], 
           dest: 'dist'
       }]
