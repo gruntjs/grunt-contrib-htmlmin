@@ -30,7 +30,9 @@ _Run this task with the `grunt htmlmin` command._
 
 See the `html-minifier` [options](https://github.com/kangax/html-minifier#options-quick-reference).
 
-#### Example
+### Examples
+
+#### Simple Example
 
 ```js
 grunt.initConfig({
@@ -76,7 +78,7 @@ grunt.initConfig({
         files: [{
           expand: true,
           cwd: 'app',
-          src: ['src/**/*.html', '*.html'], 
+          src: ['src/**/*.html', '*.html'],
           dest: 'dist'
       }]
     }
@@ -85,6 +87,7 @@ grunt.initConfig({
 
 grunt.registerTask('default', ['htmlmin']);
 ```
+
 
 ## Release History
 
@@ -111,4 +114,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
 
-*This file was generated on Tue Jul 19 2016 00:45:48.*
+*This file was generated on Sat Jan 14 2017 15:20:44.*
