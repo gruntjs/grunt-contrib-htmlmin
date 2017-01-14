@@ -1,3 +1,7 @@
+v2.1.0:
+  date: 2017-01-14
+  changes:
+    - Updated html-minifier to v3.2.3 and pretty-bytes to 4.0.2.
 v2.0.0:
   date: 2016-07-19
   changes:
