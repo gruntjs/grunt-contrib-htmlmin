@@ -1,3 +1,7 @@
+v2.2.0:
+  date: 2017-01-30
+  changes:
+    - Updated html-minifier to v3.3.0.
 v2.1.0:
   date: 2017-01-14
   changes:
