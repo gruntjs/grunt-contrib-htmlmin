@@ -9,14 +9,18 @@ module.exports = function (grunt) {
     var count = 0;
 
     this.files.forEach(function (file) {
-      var min;
+      var min, max;
       var src = file.src[0];
 
       if (!src) {
         return;
       }
 
-      var max = grunt.file.read(src);
+      if(options.process){
+        max = options.process(grunt.file.read(src), src);
+      }else{
+        max = grunt.file.read(src);
+      }
 
       try {
         min = minify(max, options);
