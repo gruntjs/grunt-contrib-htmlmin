@@ -21,7 +21,7 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
 
 
-## Htmlmin task
+## htmlmin task
 _Run this task with the `grunt htmlmin` command._
 
 *Issues with the output should be reported on the `htmlmin` [issue tracker](https://github.com/kangax/html-minifier/issues/new).*
@@ -32,7 +32,7 @@ See the `html-minifier` [options](https://github.com/kangax/html-minifier#option
 
 ### Examples
 
-#### Simple Example
+#### Simple example
 
 ```js
 grunt.initConfig({
@@ -59,7 +59,7 @@ grunt.initConfig({
 grunt.registerTask('default', ['htmlmin']);
 ```
 
-#### Example with Nested Files
+#### Example with nested files
 
 ```js
 grunt.initConfig({
