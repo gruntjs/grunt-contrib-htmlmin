@@ -1,4 +1,4 @@
-# grunt-contrib-htmlmin v2.4.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
+# grunt-contrib-htmlmin v3.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-htmlmin) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/sn73i2qggqeolnc2/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master)
 
 > Minify HTML
 
@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+If you haven't used [Grunt](https://gruntjs.com/) before, be sure to check out the [Getting Started](https://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](https://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
 npm install grunt-contrib-htmlmin --save-dev
@@ -21,7 +21,7 @@ grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
 
 
-## htmlmin task
+## Htmlmin task
 _Run this task with the `grunt htmlmin` command._
 
 *Issues with the output should be reported on the `htmlmin` [issue tracker](https://github.com/kangax/html-minifier/issues/new).*
@@ -32,7 +32,7 @@ See the `html-minifier` [options](https://github.com/kangax/html-minifier#option
 
 ### Examples
 
-#### Simple example
+#### Simple Example
 
 ```js
 grunt.initConfig({
@@ -59,7 +59,7 @@ grunt.initConfig({
 grunt.registerTask('default', ['htmlmin']);
 ```
 
-#### Example with nested files
+#### Example with Nested Files
 
 ```js
 grunt.initConfig({
@@ -91,6 +91,7 @@ grunt.registerTask('default', ['htmlmin']);
 
 ## Release History
 
+ * 2018-08-26   v3.0.0   Updated all dependencies. Requires Node.js >= 6.
  * 2017-05-16   v2.4.0   Updated html-minifier to v3.5.0.
  * 2017-03-08   v2.3.0   Updated html-minifier to v3.4.0.
  * 2017-01-30   v2.2.0   Updated html-minifier to v3.3.0.
@@ -116,6 +117,6 @@ grunt.registerTask('default', ['htmlmin']);
 
 ---
 
-Task submitted by [Sindre Sorhus](http://github.com/sindresorhus)
+Task submitted by [Sindre Sorhus](https://github.com/sindresorhus)
 
-*This file was generated on Tue May 16 2017 21:24:09.*
+*This file was generated on Sun Aug 26 2018 09:25:56.*

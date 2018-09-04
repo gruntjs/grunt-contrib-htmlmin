@@ -1,3 +1,8 @@
+v3.0.0:
+  date: 2018-08-26
+  changes:
+    - Updated all dependencies.
+    - Requires Node.js >= 6.
 v2.4.0:
   date: 2017-05-16
   changes:
