@@ -21,11 +21,11 @@
     "pretty-bytes": "^5.1.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
-    "grunt-contrib-clean": "^2.0.0",
+    "grunt": "^1.5.3",
+    "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-internal": "^7.0.0",
-    "grunt-contrib-jshint": "^2.1.0",
-    "grunt-contrib-nodeunit": "^2.0.0"
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-nodeunit": "^4.0.0"
   },
   "keywords": [
     "gruntplugin",
