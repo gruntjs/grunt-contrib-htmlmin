@@ -120,4 +120,4 @@ grunt.registerTask('default', ['htmlmin']);
 
 Task submitted by [Sindre Sorhus](https://github.com/sindresorhus)
 
-*This file was generated on Thu May 26 2022 22:27:21.*
+*This is a generated file.*

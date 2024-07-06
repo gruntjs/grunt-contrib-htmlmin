@@ -1,7 +1,8 @@
 'use strict';
+
 var chalk = require('chalk');
 var prettyBytes = require('pretty-bytes');
-var minify = require('html-minifier').minify;
+var minify = require('html-minifier-terser').minify;
 
 module.exports = function (grunt) {
   grunt.registerMultiTask('htmlmin', 'Minify HTML', function () {

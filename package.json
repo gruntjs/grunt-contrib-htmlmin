@@ -9,7 +9,7 @@
   "repository": "gruntjs/grunt-contrib-htmlmin",
   "license": "MIT",
   "engines": {
-    "node": ">=12"
+    "node": ">=16"
   },
   "main": "tasks/htmlmin.js",
   "scripts": {
@@ -17,15 +17,15 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^5.1.1",
     "pretty-bytes": "^5.1.0"
   },
   "devDependencies": {
-    "grunt": "^1.5.3",
+    "grunt": "^1.6.1",
     "grunt-contrib-clean": "^2.0.1",
-    "grunt-contrib-internal": "^7.0.0",
+    "grunt-contrib-internal": "^9.1.0",
     "grunt-contrib-jshint": "^3.2.0",
-    "grunt-contrib-nodeunit": "^4.0.0"
+    "grunt-contrib-nodeunit": "^5.0.0"
   },
   "keywords": [
     "gruntplugin",
@@ -37,6 +37,5 @@
   ],
   "files": [
     "tasks"
-  ],
-  "appveyor_id": "sn73i2qggqeolnc2"
+  ]
 }
